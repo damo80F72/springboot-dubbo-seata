@@ -1,0 +1,101 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] seata-samples-springboot-dubbo-nacos                               [pom]
+[INFO] samples-common 1.1.0                                               [jar]
+[INFO] samples-account 1.1.0                                              [jar]
+[INFO] samples-order 1.1.0                                                [jar]
+[INFO] samples-storage 1.1.0                                              [jar]
+[INFO] samples-business 1.1.0                                             [jar]
+[INFO] 
+[INFO] ------------------< io.seata:springboot-dubbo-seata >-------------------
+[INFO] Building seata-samples-springboot-dubbo-nacos 1.1.0                [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ springboot-dubbo-seata ---
+Downloading from mvnrepository: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+Downloaded from mvnrepository: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (0 B at 0 B/s)
+Downloading from mvnrepository: https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+Downloading from mvnrepository: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Downloaded from mvnrepository: https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (0 B at 0 B/s)
+Downloaded from mvnrepository: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (0 B at 0 B/s)
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ springboot-dubbo-seata ---
+[INFO] io.seata:springboot-dubbo-seata:pom:1.1.0
+[INFO] 
+[INFO] ----------------------< io.seata:samples-common >-----------------------
+[INFO] Building samples-common 1.1.0 1.1.0                                [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ samples-common ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ samples-common ---
+[INFO] io.seata:samples-common:jar:1.1.0
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.2.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.2.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.2.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.2.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.2.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  +- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  |  \- org.slf4j:slf4j-api:jar:1.7.30:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.12.1:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.30:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  |  +- org.springframework:spring-core:jar:5.2.3.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-jcl:jar:5.2.3.RELEASE:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.25:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.2.4.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.10.2:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.10.2:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.10.2:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.10.2:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.10.2:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.10.2:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.4.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.30:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.30:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.30:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-validation:jar:2.2.4.RELEASE:compile
+[INFO] |  |  +- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |  |  \- org.hibernate.validator:hibernate-validator:jar:6.0.18.Final:compile
+[INFO] |  |     +- org.jboss.logging:jboss-logging:jar:3.4.1.Final:compile
+[INFO] |  |     \- com.fasterxml:classmate:jar:1.5.1:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.2.3.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.2.3.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.2.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.2.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.2.3.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.2.3.RELEASE:compile
+[INFO] \- org.projectlombok:lombok:jar:1.18.12:compile
+[INFO] 
+[INFO] ----------------------< io.seata:samples-account >----------------------
+[INFO] Building samples-account 1.1.0 1.1.0                               [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for seata-samples-springboot-dubbo-nacos 1.1.0:
+[INFO] 
+[INFO] seata-samples-springboot-dubbo-nacos ............... SUCCESS [  4.560 s]
+[INFO] samples-common 1.1.0 ............................... SUCCESS [  0.725 s]
+[INFO] samples-account 1.1.0 .............................. FAILURE [  1.442 s]
+[INFO] samples-order 1.1.0 ................................ SKIPPED
+[INFO] samples-storage 1.1.0 .............................. SKIPPED
+[INFO] samples-business 1.1.0 ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.788 s
+[INFO] Finished at: 2020-07-19T02:57:27+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project samples-account: Could not resolve dependencies for project io.seata:samples-account:jar:1.1.0: Failure to find io.seata:samples-common:jar:1.1.0 in https://repo1.maven.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of mvnrepository has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :samples-account
