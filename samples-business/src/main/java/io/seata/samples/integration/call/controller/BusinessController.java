@@ -34,13 +34,14 @@ public class BusinessController {
      * @Return:
      */
     @GetMapping("/buy")
-    ObjectResponse handleBusiness() {
+    ObjectResponse handleBusiness(String bug) {
         BusinessDTO businessDTO = new BusinessDTO();
         businessDTO.setCommodityCode("C201901140001");
         businessDTO.setUserId("3");
         businessDTO.setAmount(new BigDecimal("10"));
         businessDTO.setCount(10);
         businessDTO.setName("小李");
+        businessDTO.setBug(bug);
 
         LOGGER.info("请求参数：{}", businessDTO.toString());
         return businessService.handleBusiness(businessDTO);
